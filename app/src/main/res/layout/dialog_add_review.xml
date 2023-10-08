@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="30dp"
+    android:orientation="vertical">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You are reviewing  "
+        android:id="@+id/t1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="item Name"
+        android:layout_toEndOf="@+id/t1"
+        android:id="@+id/t2"
+        android:layout_marginStart="5dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Name                           "
+        android:layout_below="@+id/t1"
+        android:layout_marginTop="10dp"
+        android:id="@+id/e1"
+        android:labelFor="@+id/t2"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/e1"
+        android:hint="Your Review"
+        android:layout_marginTop="10dp"
+        android:lines="5"
+        android:id="@+id/e2"
+        android:gravity="start"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/e2"
+        android:text="Warning"
+        android:layout_centerHorizontal="true"
+        android:textColor="#E91E63"
+        android:visibility="gone"
+        android:id="@+id/warning"
+        android:layout_marginTop="10dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/warning"
+        android:layout_centerHorizontal="true"
+        android:text="Add"
+        android:layout_marginTop="10dp"
+        android:id="@+id/addbtn"/>
+
+</RelativeLayout>
+</LinearLayout>
